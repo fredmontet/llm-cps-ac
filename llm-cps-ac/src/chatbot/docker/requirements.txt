@@ -1,0 +1,10 @@
+# Chatbot prerequisites (use dor Docker)
+
+python-dotenv
+openai
+langchain
+faiss-cpu
+SQLAlchemy
+tiktoken
+streamlit
+streamlit_chat

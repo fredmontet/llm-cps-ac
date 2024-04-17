@@ -1,0 +1,10 @@
+# Ignoring MacOS Desktop Services Store files
+.DS_Store
+
+# Ignore cache files and .pytest_cache
+**/__pycache__
+.pytest_cache
+
+# Ignore chatbot local data files
+data/vectorstore.pkl
+data/users.db

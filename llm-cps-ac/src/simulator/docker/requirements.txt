@@ -1,0 +1,8 @@
+# Boiler simulator prerequisites (use dor Docker)
+
+fastapi
+uvicorn[standard]
+matplotlib
+pytz
+requests
+jinja2

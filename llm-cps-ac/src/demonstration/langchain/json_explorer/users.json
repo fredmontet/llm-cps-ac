@@ -1,0 +1,99 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jean",
+      "age": 35,
+      "preferredTemperature": 22,
+      "schedule": {
+        "weekdays": {
+          "presenceHours": [
+            "08:00-09:00",
+            "18:00-23:00"
+          ]
+        },
+        "weekends": {
+          "presenceHours": [
+            "08:00-23:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Marie",
+      "age": 30,
+      "preferredTemperature": 20,
+      "schedule": {
+        "weekdays": {
+          "presenceHours": [
+            "06:30-07:30",
+            "19:00-23:00"
+          ]
+        },
+        "weekends": {
+          "presenceHours": [
+            "07:00-23:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Claire",
+      "age": 65,
+      "preferredTemperature": 21,
+      "schedule": {
+        "weekdays": {
+          "presenceHours": [
+            "06:00-13:00",
+            "19:00-23:00"
+          ]
+        },
+        "weekends": {
+          "presenceHours": [
+            "07:00-23:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Luc",
+      "age": 32,
+      "preferredTemperature": 19,
+      "schedule": {
+        "weekdays": {
+          "presenceHours": [
+            "05:30-09:45",
+            "19:00-23:00"
+          ]
+        },
+        "weekends": {
+          "presenceHours": [
+            "07:00-23:00"
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Julie",
+      "age": 28,
+      "preferredTemperature": 18,
+      "schedule": {
+        "weekdays": {
+          "presenceHours": [
+            "06:30-09:30",
+            "17:00-23:00"
+          ]
+        },
+        "weekends": {
+          "presenceHours": [
+            "00:00-24:00"
+          ]
+        }
+      }
+    }
+  ]
+}

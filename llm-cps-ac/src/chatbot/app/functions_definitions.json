@@ -1,0 +1,376 @@
+{
+    "functions": [
+        {
+            "name": "get_set_temperature",
+            "description": "Get the current set temperature in the building in °C.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "adjust_set_temperature",
+            "description": "Adjust the set temperature in the building in °C.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "temperature": {
+                        "type": "number",
+                        "description": "The desired set temperature"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "The desired action (increase, decrease, set)"
+                    }
+                },
+                "required": [
+                    "temperature",
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "get_outside_temperature",
+            "description": "Get the current outside temperature of the building in °C.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "adjust_outside_temperature",
+            "description": "Adjust the outside temperature in °C.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "temperature": {
+                        "type": "number",
+                        "description": "The desired outside temperature"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "The desired action (increase, decrease, set)"
+                    }
+                },
+                "required": [
+                    "temperature",
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "use_real_weather",
+            "description": "Use real weather data instead of the outside temperature set by the user.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "action": {
+                        "type": "boolean",
+                        "description": "The desired action (True, False)"
+                    }
+                },
+                "required": [
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "get_building_edge",
+            "description": "Get the current building edge (length of one side of the building) in m.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "adjust_building_edge",
+            "description": "Adjust the building edge in m.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "edge": {
+                        "type": "number",
+                        "description": "The desired building edge"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "The desired action (increase, decrease, set)"
+                    }
+                },
+                "required": [
+                    "edge",
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "get_heat_transfer_coefficient",
+            "description": "Get the current heat transfer coefficient (U) in W/(m²K).",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "adjust_heat_transfer_coefficient",
+            "description": "Adjust the heat transfer coefficient (U) in W/(m²K).",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "coefficient": {
+                        "type": "number",
+                        "description": "The desired heat transfer coefficient"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "The desired action (increase, decrease, set)"
+                    }
+                },
+                "required": [
+                    "coefficient",
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "get_boiler_power",
+            "description": "Get the boiler power in W.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "adjust_boiler_power",
+            "description": "Adjust the boiler power in W.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "power": {
+                        "type": "number",
+                        "description": "The desired boiler power"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "The desired action (increase, decrease, set)"
+                    }
+                },
+                "required": [
+                    "power",
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "get_volume_heat_capacity",
+            "description": "Get the current volume heat capacity in J/(kg*K) or J/(m³*K).",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "adjust_volume_heat_capacity",
+            "description": "Adjust the volume heat capacity in J/(kg*K) or J/(m³*K).",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "capacity": {
+                        "type": "number",
+                        "description": "The desired volume heat capacity"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "The desired action (increase, decrease, set)"
+                    }
+                },
+                "required": [
+                    "capacity",
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "get_boiler_fuel",
+            "description": "Get the current boiler fuel.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "change_boiler_fuel",
+            "description": "Change the boiler fuel.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "fuel": {
+                        "type": "string",
+                        "description": "The desired boiler fuel"
+                    }
+                },
+                "required": [
+                    "fuel"
+                ]
+            }
+        },
+        {
+            "name": "get_volume_heat_capacity_var",
+            "description": "Get the current volume heat capacity variable.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "change_volume_heat_capacity_var",
+            "description": "Change the volume heat capacity variable.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "heat_capacity": {
+                        "type": "string",
+                        "description": "The desired volume heat capacity variable"
+                    }
+                },
+                "required": [
+                    "heat_capacity"
+                ]
+            }
+        },
+        {
+            "name": "get_building_temperature",
+            "description": "Get the current building temperature in °C.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "get_temperature_reached",
+            "description": "Get the temperature that will be reached in °C.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "get_boiler_operating_percentage",
+            "description": "Get the current boiler operating percentage.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "get_energy_consumption",
+            "description": "Get the current energy consumption in kWh.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "get_boiler_heat_power",
+            "description": "Get the current boiler heat power in W.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "get_fuel_consumption",
+            "description": "Get the current fuel consumption in kg/h or m³/h or kWh.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "get_energy_price",
+            "description": "Get the current energy price in CHF per year.",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            },
+            "required": []
+        },
+        {
+            "name": "get_user_info",
+            "description": "Get information about a specific user",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "user_name": {
+                        "type": "string",
+                        "description": "The name of the user"
+                    },
+                    "user_id": {
+                        "type": "integer",
+                        "description": "The ID of the user"
+                    }
+                },
+                "required": []
+            }
+        },
+        {
+            "name": "modify_user_preferred_temperature",
+            "description": "Modify preferred temperature for a specific user",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "temperature": {
+                        "type": "number",
+                        "description": "The new preferred temperature"
+                    },
+                    "action": {
+                        "type": "string",
+                        "description": "The desired action (increase, decrease, set)"
+                    },
+                    "user_name": {
+                        "type": "string",
+                        "description": "The name of the user"
+                    },
+                    "user_id": {
+                        "type": "integer",
+                        "description": "The ID of the user"
+                    }
+                },
+                "required": [
+                    "temperature",
+                    "action"
+                ]
+            }
+        },
+        {
+            "name": "ask_vector_db",
+            "description": "Ask any questions about the heating system. This may include questions about operating hours, features, usage, optimization methods, eco-friendly modes, heating brand and model, security, and so on.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "question": {
+                        "type": "string",
+                        "description": "The question to ask, e.g. 'What are the heating operating hours?' or 'Does the system take measures against cybersecurity threats?'"
+                    }
+                },
+                "required": [
+                    "question"
+                ]
+            }
+        }
+    ]
+}

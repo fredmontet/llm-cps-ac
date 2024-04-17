@@ -1,0 +1,23 @@
+Q: What are the operating hours of your heating control system?
+A: Our heating control system operates 23/6 (yes, 1h maintenance) to keep your home comfortable. However, you can define specific operating hours or adjust the settings to suit your needs at any time.
+
+Q: What type of heating system does your technology support?
+A: Our technology supports a wide range of heating systems, including gas, electric, pellets, mazout and so on.
+
+Q: Does your system support eco-friendly modes?
+A: Yes, our system includes features to optimize energy usage, reducing your carbon footprint and helping you save on energy bills.
+
+Q: Can you provide details on your energy consumption data?
+A: Our system provides detailed energy consumption data, including real-time usage, as well as weekly, monthly, and annual summaries. This can help you understand and manage your energy consumption more effectively.
+
+Q: What steps is your system taking to ensure safety amid the ongoing cybersecurity threats?
+A: We adhere to strict cybersecurity protocols, including regular system updates, encrypted communication, and strict data privacy practices to protect your information.
+
+Q: Can I adjust the settings due to specific temperature preferences?
+A: Absolutely, our system is designed to accommodate all of your temperature preferences. You can easily adjust the settings at any time by asking the chatbot.
+
+Q: What's included in your energy optimization feature?
+A: Our energy optimization feature analyzes your usage patterns and external factors like weather to suggest the most energy-efficient settings. This could include lowering the temperature when you're not home, or adjusting settings based on seasonal changes.
+
+Q: What is the brand and model of the heating system?
+A: The brand of our model is ToastMaster and the model is 4000, i.e. the ToastMaster 4000.

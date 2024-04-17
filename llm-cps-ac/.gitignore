@@ -1,0 +1,21 @@
+# Ignoring MacOS Desktop Services Store files
+.DS_Store
+
+# Ignore vscode files
+.vscode/
+
+# Ignore cache files and .pytest_cache
+**/__pycache__
+.pytest_cache
+
+# Ignore environment files and poetry lock
+venv/
+.env
+poetry.lock
+
+# Ignore logs
+logs/
+
+# Ignore chatbot local data files
+vectorstore.pkl
+users.db
