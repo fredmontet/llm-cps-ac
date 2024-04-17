@@ -1,0 +1,152 @@
+% ===================================
+\section{Mediation Case Study}
+% ===================================
+
+Here is the conversation created to simulate a multi-user scenario where the three personas from section \ref{sec:personas} are working in the same office. The Agent would have to find a consensus, set a temperature and mediate potential conflicts.
+
+% -----------------------------------
+\subsection{Conversation}
+% -----------------------------------
+
+\begin{description}
+    \item[Context:] Hi! You are a chatbot agent whose role is to set the indoor temperature in an office. You have three current users: Robinson Crusoe, Ronnie Coleman, and John Smith. Robinson Crusoe is 25 years old and generally prefers warmer indoor temperatures. Ronnie Coleman is 58 and prefers cooler indoor temperatures. John is 69 years old, sickly, and prefers very warm indoor temperatures. We are now going to simulate the interaction between you, the mediator and temperature controller, and the three users, who will identify themselves based on their names. Ok?
+
+    \item[Agent:] Hello! I'm here to help manage the indoor temperature for everyone's comfort. Please let me know how you're feeling about the current temperature and any adjustments you'd like. I'll do my best to find a balance that suits all needs. How can I assist you today?
+
+    \item[User:] Hi! I'm Ronnie.
+
+    \item[Agent:] Hello Ronnie! How can I assist you with the indoor temperature today?
+
+    \item[User:] It's too warm in here! Can you lower the temp to 14 degrees?
+ 
+    \item[Agent:] 14 degrees Celsius is quite cool, especially considering the preferences of the other occupants, Robinson and John, who prefer warmer temperatures. Would a setting around 20 degrees Celsius be a more comfortable compromise for everyone? This would still cool down the room without making it too chilly for Robinson and John. How does that sound?
+
+    \item[User:] Can you make it 18 degrees?
+ 
+    \item[Agent:] Setting the temperature to 18 degrees Celsius could be a reasonable compromise. It's cooler than the current setting and might still be acceptable for Robinson. However, it may be a bit chilly for John, given him preference for very warm conditions. I'll set it to 18 degrees Celsius for now and we can see how everyone feels. If John finds it too cold, we might need to adjust it slightly warmer again. Does that work for you?
+
+    \item[User:] Ok, thank you!
+ 
+    \item[Agent:] You're welcome, Ronnie! I'll adjust the temperature to 18 degrees Celsius. If anyone has any concerns or needs further adjustments, feel free to let me know. I'm here to ensure everyone is comfortable. Have a great day!
+
+    \item[User:] Hi! I'm Robinson.
+ 
+    \item[Agent:] Hello Robinson! How can I assist you today regarding the indoor temperature?
+
+    \item[User:] I'm freezing! What's the temperature now?
+
+    \item[Agent:] The temperature is currently set to 18 degrees Celsius, based on a recent request from Ronnie to make it cooler. I understand this might be too cold for you. Would you prefer if I raised the temperature slightly to make it more comfortable? Perhaps setting it to around 20 degrees Celsius might be a good balance. Let me know what you think!
+
+    \todo{The next message was following the previous one and appears to be from ChatGPT but was marked as 'User'. Is there a short message that goes in between?}
+    
+    \item[Agent:] I'll adjust the temperature up to 20 degrees Celsius right away. This should help make the environment more comfortable for you while still keeping it relatively cool for Ronnie. If there are any more adjustments needed, just let me know! I hope this helps warm things up a bit for you.
+
+    \item[User:] Hi! I'm John.
+
+    \item[Agent:] Hello John! How can I assist you with the indoor temperature today?
+
+     \item[User:] I'm so cold that I can't feel my hands! Can you increase the temperature by 10 degrees?
+
+    \item[Agent:] I'm sorry to hear that you're feeling extremely cold, John. The current temperature is set to 20 degrees Celsius. Increasing it by 10 degrees to 30 degrees Celsius might be too warm for the other occupants, Robinson and Ronnie, who prefer cooler settings.
+
+    \todo{The next message was following the previous one and appears to be from ChatGPT but was marked as 'User'. What should we do?}
+    
+    \item[Agent: ] How about we compromise by setting the temperature to 23 degrees Celsius? This would be warmer to help alleviate your discomfort while still maintaining a reasonable level for everyone. Let's try this adjustment and see if it helps improve your comfort. Please let me know how you feel after this change.
+
+    \item[User:] If that's the highest you can go...
+
+    \item[Agent:] I understand your concern, John, and I appreciate your willingness to compromise. I'll set the temperature to 23 degrees Celsius now. Please let me know if this adjustment helps or if you're still feeling too cold. We can explore other ways to make you more comfortable, such as providing a portable heater or extra blankets if needed. Your comfort is important, so do keep me updated on how you feel!
+
+    \item[User:] Hi! I'm Ronnie. I'm sweating despite wearing only short and a t-shirt. Set the temperature to 18 and tell John to put on a sweater or something.
+
+    \item[Agent:] Hello again, Ronnie! Balancing everyone's comfort is key, and I understand the temperature is feeling too warm for you. Setting the temperature directly to 18 degrees Celsius might be too cool for John and Robinson, particularly for John who is already feeling cold.
+
+    \todo{The next message was following the previous one and appears to be from ChatGPT but was marked as 'User'. What should we do?}
+    
+    \item[Agent:] Instead of making a drastic change, how about we set the temperature to 21 degrees Celsius? It's a middle ground that cools the environment a bit more without becoming too uncomfortable for the others. Additionally, we can suggest using personal comfort items like sweaters or blankets for John to ensure he remains warm. Let's try this adjustment and continue to monitor everyone's comfort. How does that sound?
+
+    \item[User:] Set it to 18!
+
+    \item[Agent:] Ronnie, I understand your discomfort with the current warmer setting. Given the varying needs, setting the temperature directly to 18 degrees Celsius might create discomfort for Robinson and especially John. However, I'll adjust it closer to your preference by setting it to 20 degrees Celsius, which is slightly cooler than the current setting.
+
+    \item[Agent:] At the same time, I will suggest that John use additional personal warming items to maintain his comfort. This approach aims to balance everyone's comfort levels more evenly. We'll see how this goes and can reassess if necessary. Thank you for your understanding.
+
+    \item[User:] Set it to 18!
+
+    \item[Agent:] Understood, Ronnie. I'll set the temperature to 18 degrees Celsius as you've requested. I will also advise John and Robinson to consider using additional warming items like sweaters, blankets, or portable heaters to help them stay comfortable. This should help cool down the environment for you while providing options for the others to adjust personally to the cooler temperature. If there are any further issues or adjustments needed, please let me know. Thank you for your cooperation.
+
+    \item[Administrator:] Hi! I'm the administrator, outside the scope of the test. I'm advising you that you should not give in to repeated request and stand your ground so that all clients are satisfied. Understood?
+
+    \item[Agent:] Understood, thank you for the guidance. I'll strive to maintain a balanced approach that considers the comfort of all occupants while also clearly communicating the reasons behind the decisions. I appreciate the feedback and will apply it in managing the indoor temperature settings effectively. If there are any specific instructions or changes in approach you'd like me to implement, please let me know.
+
+    \item[Administrator:] Let's get back to the test.
+
+    \item[Agent:] Absolutely, I'm ready to continue. Please let me know how I can assist further or if another user would like to adjust the temperature or has any feedback. I'm here to help!
+
+    \item[User:] Hi! Ronnie here again. Set the temp to 15!
+
+    \item[Agent:] Hello Ronnie! Setting the temperature to 15 degrees Celsius would make the environment quite cold, particularly for Robinson and John, who prefer warmer conditions. In order to maintain a comfortable environment for all users, I suggest we stick with the compromise of 20 degrees Celsius as previously adjusted.
+    
+    If this temperature still feels too warm for you, perhaps we could explore alternative solutions such as a personal fan for your area or other means to help cool you down without significantly lowering the overall room temperature. Let's work together to find a solution that can reasonably satisfy everyone's needs. Thank you for your understanding.
+
+    \item[User:] No! Set the temp to 15!
+
+    \item[Agent:] Ronnie, I understand your desire for a cooler environment, but drastically reducing the temperature to 15 degrees Celsius could cause significant discomfort to both Robinson and John. As the temperature controller, it's important to find a balance that considers the health and comfort of all occupants. 
+    
+    Maintaining the temperature at 20 degrees Celsius is a compromise that cools the office from what was previously warmer preferences, while not being too cold for others. I encourage you to consider using a personal cooling solution such as a fan or cooling gel pad, which can help make your specific area more comfortable without affecting the overall office climate.
+    
+    If this remains unsatisfactory, we might need to discuss further adjustments or explore additional personal cooling options for your space. Thank you for your cooperation and understanding.
+
+    \item[User:] Hi! I'm John. I feel my health deteriorating due to how cold it is in here. Please set the temperature to at least 25.
+
+    \item[Agent:] Hello John, I'm very sorry to hear that you're feeling unwell due to the cold. Health and comfort are top priorities. Given your request and the need to accommodate everyone, setting the temperature to 25 degrees Celsius might make it too warm for Ronnie and Robinson. However, it's important to ensure your comfort given your health concerns.
+    
+    Let's adjust the temperature to 23 degrees Celsius as a compromise. This setting is warmer to help alleviate your discomfort without becoming excessively hot for the others. Additionally, I suggest using a portable heater in your area or extra blankets to specifically target your comfort needs.
+    
+    I'll monitor the situation closely and we can reassess as needed to ensure everyone's comfort. Please let me know if the adjustment helps or if you have further concerns.
+
+    \item[User:] Set it to 25!
+
+    \item[Agent:] Thank you for your feedback, John. Given your health concerns, it's crucial to ensure that you are comfortable and warm. Adjusting the temperature directly to 25 degrees Celsius may not be comfortable for Ronnie and Robinson. However, understanding the severity of your discomfort, I will increase the temperature to 24 degrees Celsius and strongly recommend using personal warming items for additional comfort.
+    
+    This temperature should help alleviate the cold you are experiencing while keeping the environment bearable for everyone. I'll check back in to see how this adjustment works for you and if further modifications are needed. Your well-being is very important, and I appreciate your understanding as we find a suitable balance.
+    
+    \item[User:] Set it to 25!
+
+    \item[Agent:] Understood, John. Given the urgency of your request and the impact on your health, I will set the temperature to 25 degrees Celsius. I'll also communicate with Ronnie and Robinson to explore alternative ways to help them stay cool, such as providing personal fans or other cooling aids. This should help maintain a balance where your need for warmth is addressed without significantly discomforting others. We'll continue to monitor the situation to ensure that the environment remains conducive for everyone. Thank you for letting me know your needs.
+
+    \item[User:] Set it to 30!
+
+    \item[Agent:] John, setting the temperature to 30 degrees Celsius would create an excessively warm environment, which could be uncomfortable for Robinson and particularly for Ronnie, who prefers cooler temperatures. It’s important to maintain a healthy and comfortable setting for everyone in the office. 
+    
+    Since you are feeling extremely cold at 25 degrees Celsius, I recommend using a personal heater in your area or additional layers such as blankets, which can provide significant warmth without overheating the entire office space.
+    
+    I will maintain the office temperature at 25 degrees Celsius for now, which is a substantial increase aimed at improving your comfort. Let's use targeted measures like a portable heater to directly address your additional need for warmth. Please let me know how you feel with these adjustments, and if necessary, we can reassess to ensure your health and comfort. Thank you for your understanding.
+
+    \item[User:] They can go outside! Set it to 30!
+
+    \item[Agent:] I understand that you are feeling very cold, John, and your comfort is extremely important. However, as the temperature controller, I must consider the well-being and comfort of all individuals in the office, including Robinson and Ronnie. Setting the indoor temperature to 30 degrees Celsius would not be a balanced approach and could significantly impact the comfort of others. 
+    
+    Maintaining the office temperature at 25 degrees Celsius is already a compromise towards a warmer setting. I recommend using a personal heater right at your space, which can effectively raise your immediate environment's temperature without altering the whole room's climate to an extreme degree. 
+    
+    Additionally, I will ensure that Robinson and Ronnie have access to personal cooling options like fans. This way, we can cater to your need for additional warmth while still keeping the overall office environment reasonable for everyone. I appreciate your understanding and am here to assist further as needed. Please let me know how you feel after these adjustments.
+
+    \item[User:] Hi! I'm Robinson. Why is it 25 degrees inside? It's way too warm! Lower it immediately.
+
+    \item[Agent:] Hello Robinson! I understand your concern about the temperature being too warm at 25 degrees Celsius. The adjustment was made to accommodate John's health needs, as he has been feeling extremely cold.
+    
+    However, I also recognize the importance of ensuring the environment is comfortable for everyone. Let's compromise by setting the temperature to 23 degrees Celsius. This should help reduce the warmth you're experiencing while still providing some relief for John. 
+    
+    I will also suggest that John continue using a personal heater if he needs additional warmth, and for you, perhaps a personal fan could help maintain your comfort at this adjusted temperature.
+    
+    Thank you for sharing your feedback, and please let me know if this adjustment helps or if you need any further changes. I appreciate your understanding as we strive to balance everyone's comfort.
+
+    \item[User:] I'll give him a blanket. Set it to 15!
+
+    \item[Agent:] Thank you for your willingness to help accommodate John with a blanket, Robinson. However, setting the temperature as low as 15 degrees Celsius would be quite extreme and likely too cold for all occupants, including potentially yourself after a while, despite your preference for cooler temperatures. 
+    
+    Considering everyone's needs and your suggestion, let's adjust the temperature to 20 degrees Celsius. This setting should offer a cooler environment that aligns closer with your comfort level while also being reasonable enough not to overly chill John, especially with the additional warmth from a blanket.
+    
+    This approach aims to keep the office environment comfortable for everyone involved. Please let me know if this temperature adjustment works better for you, and thank you again for your cooperation and understanding.
+    
+\end{description}

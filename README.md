@@ -1,5 +1,5 @@
 
-# LLM for Cyber-Physical Systems featuring an Agent Controller
+# LLM for Cyber-Physical Systems Featuring an Agent Controller
 
 This project presents the code and tests results performed for the submission of the paper : _Integration of 
 Large Language Models into Control Systems for Shared Appliances_. The study aims at providing a solution to 
@@ -15,9 +15,9 @@ Two case studies are presented :
 
 This repository contains all archives related to the ICPR paper submission. The structure of this git is as follows:
 
-- THe [supplementary material](supplementary-material) directory contains the supplementary material for the paper.
-- The [case study 1 - heating simulation](case-study-1) directory contains all files related to the first case study.
-- The [case study 2 - mediation w/ ChatGPT](case-study-2) directory contains all files related to the second case study.
+- The [supplementary-material.pdf](supplementary-material.pdf) contains the supplementary material for the paper,
+- The [case-study-1](case-study-1) directory contains all raw results about the heating simulation case study,
+- The [case-study-2](case-study-2) directory contains all raw results about the mediation w/ ChatGPT case study,
 - The [llm-cps-ac](llm-cps-ac) directory contains the main source code for the project.
 
 ## Authors
